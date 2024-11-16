@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="templates/displayPdf.html">View PDF</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <h2>Upload PDF and Generate QR Code</h2>
+        <input type="file" id="pdfUpload" accept="application/pdf">
+        <button id="generateQR">Generate QR Code</button>
+        <div id="qrCode"></div>
+        <a id="downloadLink">Download QR Code</a>
+        <div id="errorMessage" class="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
